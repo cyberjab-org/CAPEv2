@@ -1,3 +1,24 @@
+### [07.03.2024]
+* Monitor updates:
+    * Countermeasure for NtCreateUserProcess block-non-Microsoft-DLLs mitigation policy affecting monitoring
+    * Expand 'syscall' breakpoints to handle indirect syscalls (sysbpmode=1)
+    * Small fixes & improvements
+* Pikabot detection update & anti-hook bypass
+
+### [29.02.2024]
+* TLP fields added to distributed database. Requires db upgrade: `cd utils/db_migration_db && alembic upgrade head`
+* Monitor fixes
+
+### [28.02.2024]
+* Add 'ShellWindows' COM object injection mechanism (e.g. Latrodectus MSIs)
+* Monitor: add option to disable ntdll remap protection: ntdll-remap=0
+* Lumma direct systenter unmap crash bypass
+
+### [26.02.2024]
+* Monitor updates: Service injection delay for e.g. msi detonation & EnumDisplayDevices hooks & anti-vm (thanks @enzo)
+* Updated DarkGate config & payload extraction (thanks @enzo)
+* Latrodectus auto-export selection
+
 ### [23.02.2024]
 * Monitor updates: Debugger/Trace enhancements
 
